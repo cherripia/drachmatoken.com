@@ -1,0 +1,192 @@
+@charset "UTF-8";
+/* link styles */
+main header nav body footer {
+  margin: 0;
+  padding: 20px;
+  border: 1px solid black;
+  color: #ffffff;
+}
+a {
+  text-decoration: none;
+  border-bottom: 1px dotted;
+  padding-bottom: .2em;
+}
+header {
+  display: flex;
+  text-align: center;
+  min-height: 100px;
+  justify-content: space-between;
+  align-content: center;
+}
+
+nav {
+  display: flex;
+  background: linear-gradient(180deg, #8C166B, #D80326);
+  text-align: center;
+  color: white;
+}
+nav li {
+  float: inline-start;
+}
+nav li a{
+  display: flex;
+  color: white;
+  text-align: center;
+}
+
+#header-subsection {
+  display: flex;
+  text-align: center;
+  min-height: 60px;
+  justify-content: space-between;
+  align-content: center;
+  background: linear-gradient(180deg, #D80326, #D22D2D);
+}
+#header-subsection .header-intro-text {
+  display: block; 	
+  border: 1px solid; 
+  padding: .5em 1em; 	
+  border-radius: .5em; 
+  margin: .25em;
+  flex-grow: 1;
+  color: white
+}
+#header-subsection .email-notification-container {
+  display: block; 	
+  border: 1px solid; 
+  padding: .5em 1em; 	
+  border-radius: .5em; 
+  margin: .25em;
+  flex-grow: 1;
+  color: white
+}
+#header-subsection .email-notification-container .form-control {
+  background-color: #D22D2D;
+  border-color: white;
+  color: white;
+}
+#main-banner-background {
+  display: block; 	
+  border: 1px solid;  	
+  height: 25em;
+  background: linear-gradient(180deg, #D22D2D, #EE8539);
+}
+
+#main-text-container-1{
+  box-sizing: content-box;
+  display: block; 	
+  border: 1px solid; 
+  padding: .5em 1em;
+}
+.container-1-text-box-1{
+  box-sizing: content-box;
+  display: block; 	
+  border: 1px solid; 
+  padding: .5em 1em;
+  background-color: white;
+}
+.container-1-text-box-2{
+  box-sizing: content-box;
+  display: block; 	
+  border: 1px solid; 
+  padding: .5em 1em;
+  background-color: white;
+}
+.container-1-text-box-3{
+  box-sizing: content-box;
+  display: block; 	
+  border: 1px solid; 
+  padding: .5em 1em;
+  background-color: white;
+}
+
+#main-text-container-2{
+  box-sizing: content-box;
+  display: block; 	   
+  border: 1px solid; 
+  padding: .5em 1em;
+  background: linear-gradient(0deg, #A50F90, #D22D2D);
+  color: white;
+}
+.about-drachma{
+  background-image: url(/includes/images/DayTheme-BodySlide-Two/day-theme-token-svg-2.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 200px;
+  padding: 3em 50vw 3em 3em;
+  border: 1px solid; 
+}
+.container-2-content-box-2{
+  display: flex;
+  box-sizing: content-box;
+  border: 1px solid; 
+  padding: .5em 1em;
+}
+
+#main-logo-container-3{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+#main-logo-container-3 .wrap1 {
+  display: flex;
+  box-sizing: content-box;
+}
+.main-logo-container-3-header{
+  background-color: white;
+  box-sizing: content-box;
+  border: 1px solid; 
+  padding: .5em 1em;
+}
+#main-logo-container-3-svgs{
+  display: flex;
+  box-sizing: content-box;
+  border: 1px solid; 
+  padding: .5em 1em;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+#main-text-container-4 {
+  box-sizing: content-box;
+  border: 1px solid; 
+  padding: .5em 1em;
+  background: linear-gradient(235deg, #D1242A, #8C166B);
+  align-content: center;
+  justify-content: space-evenly;
+  color: white;
+}
+#main-text-container-4 #main-text-container-4-header {
+  box-sizing: content-box;
+}
+#main-text-container-4-contents{
+  display: flex;
+  box-sizing: content-box;
+}
+#main-text-container-4 .btn-primary {
+  color: white;
+  background-color: #D1242A;
+  border-color: white;
+}
+
+footer {
+  background-color: white;
+}
+footer a {
+  color: #BD255E;
+}
+
+@media screen and (max-width: 768px) {
+  justify-content: inherit;
+}
+
+@media only screen and (max-width: 768px){
+  * {
+    
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
