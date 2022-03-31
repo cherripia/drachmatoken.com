@@ -1,11 +1,17 @@
 :root {
     --red: #E4001B;
     --purple: #7C1978;
-    --ff-primary: "Montserrat", sans-serif;
-    --ff-secondary: "Roboto", sans-serif;
+    --faded-red: #e92a34;
+    --faded-purple: #b32568;
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Montserrat", sans-serif;
 }
 
 /* General */
+
+a {
+    text-decoration: none;
+}
 
 a:hover {
     cursor: pointer;
@@ -30,4 +36,92 @@ body {
     color: black;
 }
 
-/* Mobile */
+h1, h2, h3 {
+    font-family: var(--ff-secondary);
+    font-weight: 500;
+}
+
+/* Navbar */
+
+nav {
+    top: 1.5em;
+    position: absolute;
+    width: 100%;
+}
+
+#navContent {
+    position: inherit;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    list-style-type: none;
+    display: inline-block;
+    border: solid 2px white;
+    border-radius: 12px;
+    text-align: center;
+    width: 95%;
+    max-width: 35rem;
+}
+
+#navContent a {
+    color: white;
+    font-size: .9em;
+    font-weight: 500;
+    font-family: var(--ff-secondary);
+    padding: 1.2%;
+}
+
+#navContent a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+
+header {
+    background-image: url("../img/Pattern2.png"), linear-gradient(to top right, var(--faded-purple), var(--faded-red));
+    background-size: contain;
+    min-height: 80vh;
+}
+
+#headerDescription {
+    padding-top: 10em;
+}
+
+#headerLogo img {
+    float: left;
+    max-width: 6em;
+    margin-right: 2em;
+}
+
+#headerLogo p {
+    line-height: 3em;
+    font-size: 1.5rem;
+}
+
+/* Classes */
+
+.content {
+    margin: auto;
+}
+
+.white {
+    color: white;
+}
+
+.fontLight {
+    font-weight: 100;
+}
+
+.fontBold {
+    font-weight: 500;
+}
+
+.fontSpaced {
+    letter-spacing: .2rem;
+}
+
+.ffSecondary {
+    font-family: var(--ff-secondary);
+}
