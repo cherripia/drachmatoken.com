@@ -13,7 +13,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover, input[type="submit"]:hover {
     cursor: pointer;
 }
 
@@ -44,7 +44,7 @@ h1, h2, h3 {
 /* Navbar */
 
 nav {
-    top: 1.5em;
+    top: 1.5rem;
     position: absolute;
     width: 100%;
 }
@@ -54,10 +54,9 @@ nav {
     margin: 0 auto;
     left: 0;
     right: 0;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     list-style-type: none;
-    display: inline-block;
     border: solid 2px white;
     border-radius: 12px;
     text-align: center;
@@ -82,25 +81,125 @@ nav {
 header {
     background-image: url("../img/Pattern2.png"), linear-gradient(to top right, var(--faded-purple), var(--faded-red));
     background-size: contain;
-    min-height: 80vh;
+}
+
+#headerContent {
+    padding-top: 8rem;
+    max-width: 1080px;
 }
 
 #headerDescription {
-    padding-top: 10em;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 20em;
+}
+
+#headerDescription h1 {
+    padding-top: .3rem;
+    padding-bottom: .75rem;
+    letter-spacing: .15em;
+}
+
+#headerDescription p {
+    line-height: 1.5em;
+    letter-spacing: .05em;
 }
 
 #headerLogo img {
     float: left;
-    max-width: 6em;
-    margin-right: 2em;
+    max-width: 6rem;
+    margin-right: 2rem;
 }
 
 #headerLogo p {
     line-height: 3em;
-    font-size: 1.5rem;
+    font-size: 1.5em;
+}
+
+#ICOCountdown {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 12px;
+    letter-spacing: .15em;
+    padding: 1rem;
+    max-width: 28rem;
+    color: white;
+}
+
+#ICOTimer div {
+    padding-top: 1rem;
+    font-weight: 500;
+}
+
+#ICOTimer div h1 {
+    font-family: var(--ff-secondary);
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 170%;
+    width: 5rem;
+    height: 5rem;
+    background-color: rgba(255, 255, 255, .25);
+}
+
+#ICOTimer div p {
+    line-height: 2rem;
+}
+
+#ICOEmail {
+    min-width: 12rem;
+    width: 60%;
+    padding: .5rem;
+    border: 1px solid white;
+    color: white;
+    font-family: var(--ff-primary);
+    letter-spacing: .05em;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 12px 0px 0px 12px;
+}
+
+#ICOEmail::placeholder {
+    color:white;
+    font-family: var(--ff-secondary);
+    font-weight: 500;
+}
+
+#ICONotification {
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+}
+
+#ICONotify {
+    width: 6rem;
+    padding: .5rem;
+    background-color: white;
+    border: 0px none;
+    border-radius: 0px 12px 12px 0px;
+    font-family: var(--ff-primary);
+    color: var(--red);
+    font-size: 1em;
+}
+
+#headerScenic {
+    padding-top: 8rem;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 747px) {
+    #ICOCountdown {
+        margin-top: 2rem;
+    }
 }
 
 /* Classes */
+
+.seperator {
+    width: 1rem;
+}
 
 .content {
     margin: auto;
@@ -114,8 +213,12 @@ header {
     font-weight: 100;
 }
 
-.fontBold {
+.fontMedium {
     font-weight: 500;
+}
+
+.fontBold {
+    font-weight: 700;
 }
 
 .fontSpaced {
@@ -124,4 +227,14 @@ header {
 
 .ffSecondary {
     font-family: var(--ff-secondary);
+}
+
+.overflow {
+    overflow-x: hidden;
+}
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
