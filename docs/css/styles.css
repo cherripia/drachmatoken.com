@@ -189,10 +189,27 @@ header {
 #headerScenic {
     width: 100%;
     height: 30vh;
+    overflow: hidden;
 }
 
 #headerScenic > * {
     position: absolute;
+}
+
+#headerSun {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 60vh;
+}
+
+#headerMountains > * {
+    position: absolute;
+    height: 20vh;
+    width: 20vh;
+    background-color: blue;
+    z-index: 1;
+    transform: rotate(45deg);
 }
 
 /* Classes */
