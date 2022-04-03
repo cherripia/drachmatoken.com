@@ -84,7 +84,7 @@ header {
 }
 
 #headerContent {
-    padding-top: 8rem;
+    padding-top: 6rem;
     max-width: 1080px;
 }
 
@@ -92,6 +92,7 @@ header {
     left: 0;
     right: 0;
     margin: 0 auto;
+    margin-top: 2rem;
     width: 20em;
 }
 
@@ -121,6 +122,7 @@ header {
     left: 0;
     right: 0;
     margin: 0 auto;
+    margin-top: 2rem;
     text-align: center;
     border: 2px solid white;
     border-radius: 12px;
@@ -185,14 +187,12 @@ header {
 }
 
 #headerScenic {
-    padding-top: 8rem;
-    overflow: hidden;
+    width: 100%;
+    height: 30vh;
 }
 
-@media screen and (max-width: 747px) {
-    #ICOCountdown {
-        margin-top: 2rem;
-    }
+#headerScenic > * {
+    position: absolute;
 }
 
 /* Classes */
@@ -234,7 +234,8 @@ header {
 }
 
 .flexContainer {
+    flex: 2;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
