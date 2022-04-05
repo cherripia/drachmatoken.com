@@ -79,7 +79,7 @@ nav {
 /* Header */
 
 header {
-    background-image: url("../img/Pattern2.png"), linear-gradient(to top right, var(--faded-purple), var(--faded-red));
+    background-image: url("../img/Pattern.png"), linear-gradient(to top right, var(--faded-purple), var(--faded-red));
     background-size: contain;
 }
 
@@ -200,7 +200,6 @@ header {
     left: 0;
     right: 0;
     margin: 0 auto;
-    height: 60vh;
 }
 
 #headerMountains > * {
