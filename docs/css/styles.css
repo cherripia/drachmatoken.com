@@ -32,7 +32,7 @@ body, h1, h2, h3, p {
 
 body {
     font-family: var(--ff-primary);
-    font-weight: 300;
+    font-weight: 400;
     color: black;
 }
 
@@ -84,14 +84,13 @@ header {
 }
 
 #headerContent {
-    padding-top: 6rem;
+    padding-top: 8rem;
     max-width: 1080px;
 }
 
 #headerDescription {
     left: 0;
     right: 0;
-    margin: 0 auto;
     margin-top: 2rem;
     width: 20em;
 }
@@ -128,7 +127,7 @@ header {
     border-radius: 12px;
     letter-spacing: .15em;
     padding: 1rem;
-    max-width: 28rem;
+    max-width: 27rem;
     color: white;
 }
 
@@ -220,13 +219,81 @@ header {
 #philosophyContainer > div {
     box-sizing: content-box;
     max-width: 20rem;
-    margin: 0 auto;
     padding-top: 5rem;
     padding-bottom: 5rem;
+    margin: 0 auto;
 }
 
+#donate {
+    width: 100%;
+}
 
+#philosophyContainer > div > h1 {
+    padding-bottom: .5rem;
+    letter-spacing: .25rem;
+    background: linear-gradient(45deg, var(--red), var(--purple));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block
+}
 
+#philosophyContainer > div > p {
+    line-height: 1.5em;
+    letter-spacing: .05em;
+}
+
+#about {
+    background-image: linear-gradient(to top, var(--faded-purple), var(--faded-red));
+}
+
+#aboutContainer {
+    padding: 4rem;
+    max-width: 1080px;
+    margin: 0 auto;
+    color: white;
+}
+
+#aboutContainer > div {
+    max-width: 20rem;
+    letter-spacing: .05em;
+}
+
+#aboutContainer > div > h1 {
+    font-size: 2rem;
+}
+
+#partnersContainer {
+    padding: 2rem;
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#tokenomics {
+    background-image: linear-gradient(to top, var(--faded-purple), var(--faded-red));
+    color: white;
+}
+
+#tokenomicsContainer {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#tokenomicsContainer > div {
+    padding: 2rem;
+}
+
+#footerContainer {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
 
 /* Classes */
 
@@ -271,4 +338,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.big {
+    font-size: 2rem;
 }
