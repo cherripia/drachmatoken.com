@@ -12,7 +12,11 @@
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon16.png">
+    <link rel="shortcut icon" href="../img/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="../js/headerAnimation.js"></script>
 </head>
 <body>
     <nav>
@@ -62,20 +66,21 @@
                 </div>
             </div>
             <div id="headerScenic">
+                <div id="sunContainer">
+                    <img id="headerSun" src="../img/Sun.svg">
+                </div>
+                <img id="headerHill" src="../img/Hill.png">
                 <div id="headerMountains">
                     <div></div>
                     <div></div>
                 </div>
-                <div id="headerClouds">
-                    <img src="../img/Cloud.svg" />
-                    <img src="../img/Cloud.svg" />
-                    <img src="../img/Cloud.svg" />
-                    <img src="../img/Cloud.svg" />
-                    <img src="../img/Cloud.svg" />
-                    <img src="../img/Cloud.svg" />
-                </div>
                 <img id="headerOlympus" src="../img/Olympus.svg" />
-                <img id="headerSun" src="../img/Sun.png" />
+                <div id="headerClouds">
+                    <img src="../img/Cloud.svg" class="cloud1"/>
+                    <img src="../img/Cloud.svg" class="cloud2"/>
+                    <img src="../img/Cloud.svg" class="cloud3"/>
+                    <img src="../img/Cloud.svg" class="cloud4"/>
+                </div>
             </div>
         </div>
         <div class="pattern"></div>
@@ -83,38 +88,46 @@
     <section id="philosophy">
         <div id="philosophyContainer">
             <div id="philosophyPhilanthropy">
-                <h1 class="fontBold">PHILANTHROPY</h1>
+                <h1 class="fontBold gradientText">PHILANTHROPY</h1>
                 <p>Drachma delivers 2% of every transaction to our Non-Profit partners generating good will and social impact.</p>
             </div>
             <div id="philosophyProsperity">
-                <h1 class="fontBold">PROSPERITY</h1>
+                <h1 class="fontBold gradientText">PROSPERITY</h1>
                 <p>This 2% will be burned from the circulating supply causing deflation and encouraging holding, in turn creating more value for Drachma.</p>
             </div>
             <div id="philosophySecurity">
-                <h1 class="fontBold">SECURITY</h1>
+                <h1 class="fontBold gradientText">SECURITY</h1>
                 <p>Buyer protection means dramatic price drops are infrequent and minimized. Liquidity Pools remain at level to keep Drachma available for buyers.</p>
             </div>
         </div>
     </section>
     <section id="about">
-        <div id="aboutContainer" class="flexContainer">
-            <div>
-                <h1 class="fontBold">WHAT IS DRACHMA?</h1>
-                <p>Drachma is an ERC-20 token on the Ethereum blockchain. The first of its kind, created with a mission to deliver a deflationary token with value not bound simply by its investment. 
-                </p>
-                
+        <div class="borderRedClouds"></div>
+        <div id="aboutContainer">
+            <div class="flexContainer">
+                <div>
+                    <h1 class="fontBold">WHAT IS DRACHMA?</h1>
+                    <p class="fontMedium">
+                        Drachma is an ERC-20 token on the Ethereum blockchain. The first of its kind, created with a mission to deliver a deflationary token with value not bound simply by its investment.
+                    </p>
+                </div>
+                <img src="../img/Coins.png" />
             </div>
-            <img src="../img/Coins.png" />
-            <img src="../img/Hands.png" />
-            <div>
-                <h1 class="fontBold">OUR MISSION</h1>
-                <p>Our goal is, as cryptocurrencies evolve that a great initiative is taken to allow profits from investments and crypto development to drive philanthropic efforts around the world.</p>
+            <div class="flexContainer">
+                <img src="../img/Hands.png" />
+                <div class="paddingTop">
+                    <h1 class="fontBold">OUR MISSION</h1>
+                    <p class="fontMedium">
+                        Our goal is, as cryptocurrencies evolve that a great initiative is taken to allow profits from investments and crypto development to drive philanthropic efforts around the world.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
     <section>
+        <div class="borderWhiteClouds"></div>
         <div id="partnersContainer">
-            <h1 class="fontBold">PARTNERS & COMMUNITIES</h1>
+            <h1 class="fontBold gradientText">PARTNERS & COMMUNITIES</h1>
             <div>
                 <div>
                     <img>
@@ -131,23 +144,26 @@
         </div>
     </section>
     <section id="tokenomics">
+        <div class="borderRedClouds"></div>
         <div id="tokenomicsContainer">
             <h1 class="fontBold big">TOKENOMICS</h1>
-            <div>
-                <h2 class="fontBold">TOKEN SYMBOL</h2>
-                <p>$DRC</p>
-            </div>
-            <div>
-                <h2 class="fontBold">MAX SUPPLY</h2>
-                <p>1 trillion</p>
-            </div>
-            <div>
-                <h2 class="fontBold">TRANSACTION FEE</h2>
-                <p>2% per transaction</p>
-            </div>
-            <div>
-                <h2 class="fontBold">BURN RATE</h2>
-                <p>2% of sale of token</p>
+            <div id="tokenomicsList" class="flexContainer">
+                <div>
+                    <h2 class="fontBold">TOKEN SYMBOL</h2>
+                    <p class="fontMedium">$DRC</p>
+                </div>
+                <div>
+                    <h2 class="fontBold">MAX SUPPLY</h2>
+                    <p class="fontMedium">1 trillion</p>
+                </div>
+                <div>
+                    <h2 class="fontBold">TRANSACTION FEE</h2>
+                    <p class="fontMedium">2% per transaction</p>
+                </div>
+                <div>
+                    <h2 class="fontBold">BURN RATE</h2>
+                    <p class="fontMedium">2% of sale of token</p>
+                </div>
             </div>
         </div>
     </section>
