@@ -223,6 +223,7 @@ header {
     height: 20vh;
     width: 20vh;
     background-color: #CA0733;
+    z-index: 2;
 }
 
 #headerMountains div:nth-of-type(1) {
@@ -266,13 +267,15 @@ header {
 }
 
 @keyframes cloudAnimation {
-    from {
-        opacity: 0;
-        margin-left: 100%;
+    20% {
+        opacity: .4;
     }
-    to {
-        margin-left: -100%;
-        opacity: .5;
+    80% {
+        opacity: .4;
+    }
+    100% {
+        margin-right: 67%;
+        opacity: 0;
     }
 }
 
@@ -287,8 +290,33 @@ header {
 
 #headerClouds > * {
     position: absolute;
-    max-width: 50%;
-    animation: 1s infinite cloudAnimation;
+    opacity: 0;
+    right: 0
+}
+
+.cloud1 {
+    bottom: 2rem;
+    animation: 25s infinite cloudAnimation linear;
+    animation-delay: 10s;
+    z-index: 3;
+    max-width: 12rem;
+}
+
+.cloud2 {
+    bottom: 5rem;
+    max-width: 8rem;
+    animation: 25s infinite cloudAnimation linear;
+    z-index: 3;
+
+}
+
+.cloud3 {
+    bottom: 6rem;
+    animation: 25s infinite cloudAnimation linear;
+    animation-delay: 16s;
+    z-index: 4;
+    max-width: 10rem;
+
 }
 
 #philosophyContainer {
