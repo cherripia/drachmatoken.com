@@ -267,14 +267,14 @@ header {
 }
 
 @keyframes cloudAnimation {
-    20% {
+    10% {
+        opacity: .4;
+    }
+    70% {
         opacity: .4;
     }
     80% {
-        opacity: .4;
-    }
-    100% {
-        margin-right: 67%;
+        right: 80%;
         opacity: 0;
     }
 }
@@ -291,32 +291,41 @@ header {
 #headerClouds > * {
     position: absolute;
     opacity: 0;
-    right: 0
+    right: 0;
 }
 
 .cloud1 {
     bottom: 2rem;
-    animation: 25s infinite cloudAnimation linear;
-    animation-delay: 10s;
+    animation: 20s infinite cloudAnimation linear;
+    animation-delay: 5s;
     z-index: 3;
-    max-width: 12rem;
+    max-width: 10rem;
 }
 
 .cloud2 {
     bottom: 5rem;
-    max-width: 8rem;
-    animation: 25s infinite cloudAnimation linear;
+    max-width: 10rem;
+    animation: 20s infinite cloudAnimation linear;
     z-index: 3;
 
 }
 
 .cloud3 {
     bottom: 6rem;
-    animation: 25s infinite cloudAnimation linear;
-    animation-delay: 16s;
+    animation: 20s infinite cloudAnimation linear;
+    animation-delay: 10s;
     z-index: 4;
     max-width: 10rem;
 
+}
+
+@media screen and (max-width: 500) {
+    .cloud2 {
+        height: 0;
+        width: 0;
+        top: 500%;
+        animation: none;
+    }
 }
 
 #philosophyContainer {
@@ -349,7 +358,7 @@ header {
 }
 
 #aboutContainer {
-    padding: 4rem 4rem 8rem 4rem;
+    padding: 6rem 4rem 9rem 4rem;
     max-width: 800px;
     margin: 0 auto;
     color: white;
