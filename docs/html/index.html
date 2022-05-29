@@ -16,24 +16,25 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon16.png">
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <script src="../js/headerAnimation.js"></script>
+    <script src="../js/JQuery.js"></script>
+    <script src="../js/scrollAnimation.js"></script>
 </head>
 <body>
     <nav>
-        <ul id="mobileNavToggle">
+        <ul id="mobileNavToggleOpen">
             <li></li>
             <li></li>
             <li></li>
         </ul>
-        </div>
-        <div id="navContent">
-            <a href="">Home</a>
-            <a href="">About Us</a>
-            <a href="">Partners</a>
-            <a href="">Tokenomics</a>
-            <a href="">Project Phases</a>
-        </div>
+        <a id="mobileNavToggleClose">X</a>
+        <ul id="navContent">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#tokenomics">Tokenomics</a></li>
+        </ul>
     </nav>
+    <section id="home"></section>
     <header class="overflow" >
         <div id="headerContent" class="content flexContainer">
             <div id="headerDescription">
@@ -49,19 +50,19 @@
                     <h1 class="white fontMedium">ICO COMING SOON</h1>
                     <div id="ICOTimer" class="flexContainer">
                         <div id="ICOTimerDays">
-                            <h1>17</h1>
+                            <h1>0</h1>
                             <p>Days</p>
                         </div>
                         <div id="ICOTimerHours">
-                            <h1>22</h1>
+                            <h1>0</h1>
                             <p>Hours</p>
                         </div>
                         <div id="ICOTimerMinutes">
-                            <h1>40</h1>
+                            <h1>0</h1>
                             <p>Minutes</p>
                         </div>
                         <div id="ICOTimerSeconds">
-                            <h1>15</h1>
+                            <h1>0</h1>
                             <p>Seconds</p>
                         </div>
                     </div>
@@ -92,18 +93,24 @@
         <div class="pattern"></div>
     </header>
     <section id="philosophy">
+        <div id="philosophyDecoration">
+            <img class="philosophyCloudBig philosophyCloud1 fade" src="../img/CloudGradient.png">
+            <img class="philosophyCloudSmall philosophyCloud2 fade" src="../img/CloudGradient2.png">
+            <img class="philosophyCloudSmall philosophyCloud3 fade" src="../img/CloudGradient.png">
+            <img class="philosophyCloudHuge philosophyCloud4 fade" src="../img/CloudGradient2.png">
+        </div>
         <div id="philosophyContainer">
             <div id="philosophyPhilanthropy">
-                <h1 class="fontBold gradientText">PHILANTHROPY</h1>
-                <p>Drachma delivers 2% of every transaction to our Non-Profit partners generating good will and social impact.</p>
+                <h1 class="fontBold gradientText fade">PHILANTHROPY</h1>
+                <p class="fade">Drachma delivers 2% of every transaction to our Non-Profit partners generating good will and social impact.</p>
             </div>
             <div id="philosophyProsperity">
-                <h1 class="fontBold gradientText">PROSPERITY</h1>
-                <p>This 2% will be burned from the circulating supply causing deflation and encouraging holding, in turn creating more value for Drachma.</p>
+                <h1 class="fontBold gradientText fade">PROSPERITY</h1>
+                <p class="fade">This 2% will be burned from the circulating supply causing deflation and encouraging holding, in turn creating more value for Drachma.</p>
             </div>
             <div id="philosophySecurity">
-                <h1 class="fontBold gradientText">SECURITY</h1>
-                <p>Buyer protection means dramatic price drops are infrequent and minimized. Liquidity Pools remain at level to keep Drachma available for buyers.</p>
+                <h1 class="fontBold gradientText fade">SECURITY</h1>
+                <p class="fade">Buyer protection means dramatic price drops are infrequent and minimized. Liquidity Pools remain at level to keep Drachma available for buyers.</p>
             </div>
         </div>
     </section>
@@ -112,39 +119,37 @@
         <div id="aboutContainer">
             <div class="flexContainer">
                 <div>
-                    <h1 class="fontBold">WHAT IS DRACHMA?</h1>
-                    <p class="fontMedium">
+                    <h1 class="fontBold fade">WHAT IS DRACHMA?</h1>
+                    <p class="fontMedium fade">
                         Drachma is an ERC-20 token on the Ethereum blockchain. The first of its kind, created with a mission to deliver a deflationary token with value not bound simply by its investment.
                     </p>
                 </div>
-                <img src="../img/Coins.png" />
+                <img src="../img/Coins.png" class="fade"/>
             </div>
             <div class="flexContainer">
-                <img src="../img/Hands.png" />
+                <img src="../img/Hands.png" class="fade"/>
                 <div class="paddingTop">
-                    <h1 class="fontBold">OUR MISSION</h1>
-                    <p class="fontMedium">
+                    <h1 class="fontBold fade">OUR MISSION</h1>
+                    <p class="fontMedium fade">
                         Our goal is, as cryptocurrencies evolve that a great initiative is taken to allow profits from investments and crypto development to drive philanthropic efforts around the world.
                     </p>
                 </div>
             </div>
         </div>
     </section>
-    <section>
+    <section id="partners">
         <div class="borderWhiteClouds"></div>
         <div id="partnersContainer">
-            <h1 class="fontBold gradientText">PARTNERS & COMMUNITIES</h1>
-            <div>
-                <div>
-                    <img>
-                    <img>
-                    <img>
+            <h1 class="fontBold gradientText fade">PARTNERS & COMMUNITIES</h1>
+            <div id="mediaLists">
+                <div id="partnersList">
+                    <a href="https://www.cyberarq.com/" target="_blank"><img src="../img/CyberarqLogo.png" class="fade"></a>
                 </div>
-                <div>
-                    <img>
-                    <img>
-                    <img>
-                    <img>
+                <div id="socialsList">
+                    <a href="https://discord.gg/E34kZept4N" target="_blank"><img src="../img/DiscordLogo.png" class="fade"></a>
+                    <a href="https://twitter.com/DrachmaFinance" target="_blank"><img src="../img/TwitterLogo.png" class="fade"></a>
+                    <a href="https://t.me/+3b6yxze0mGI4YmJh"><img src="../img/TelegramLogo.png" target="_blank" class="fade"></a>
+                    <a href="https://www.instagram.com/drachmatoken/"><img src="../img/InstagramLogo.png" target="_blank" class="fade"></a>
                 </div>
             </div>
         </div>
@@ -152,23 +157,23 @@
     <section id="tokenomics">
         <div class="borderRedClouds"></div>
         <div id="tokenomicsContainer">
-            <h1 class="fontBold big">TOKENOMICS</h1>
+            <h1 class="fontBold big fade">TOKENOMICS</h1>
             <div id="tokenomicsList" class="flexContainer">
                 <div>
-                    <h2 class="fontBold">TOKEN SYMBOL</h2>
-                    <p class="fontMedium">$DRC</p>
+                    <h2 class="fontBold fade">TOKEN SYMBOL</h2>
+                    <p class="fontMedium fade">$DRC</p>
                 </div>
                 <div>
-                    <h2 class="fontBold">MAX SUPPLY</h2>
-                    <p class="fontMedium">1 trillion</p>
+                    <h2 class="fontBold fade">MAX SUPPLY</h2>
+                    <p class="fontMedium fade">1 trillion</p>
                 </div>
                 <div>
-                    <h2 class="fontBold">TRANSACTION FEE</h2>
-                    <p class="fontMedium">2% per transaction</p>
+                    <h2 class="fontBold fade">TRANSACTION FEE</h2>
+                    <p class="fontMedium fade">2% per transaction</p>
                 </div>
                 <div>
-                    <h2 class="fontBold">BURN RATE</h2>
-                    <p class="fontMedium">2% of sale of token</p>
+                    <h2 class="fontBold fade">BURN RATE</h2>
+                    <p class="fontMedium fade">2% of sale of token</p>
                 </div>
             </div>
         </div>
