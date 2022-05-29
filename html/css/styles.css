@@ -519,39 +519,42 @@ header {
 .philosophyCloudHuge {
     position: absolute;
     width: 17vw;
+    min-width: 15em;
     max-width: 20em;
 }
 
 .philosophyCloudBig {
     position: absolute;
     width: 17vw;
+    min-width: 10em;
     max-width: 17em;
 }
 
 .philosophyCloudSmall {
     position: absolute;
     width: 14vw;
+    min-width: 9em;
     max-width: 14em;
 }
 
 .philosophyCloud1 {
-    right: -4rem;
-    top: 4rem;
+    right: -6rem;
+    top: 2rem;
 }
 
 .philosophyCloud2 {
-    left: -1rem;
-    top: 10rem;
+    left: -3rem;
+    top: 12rem;
 }
 
 .philosophyCloud3 {
-    top: 39rem;
-    right: -1rem;
+    top: 43rem;
+    right: -5rem;
 }
 
 .philosophyCloud4 {
-    left: -7rem;
-    top: 34rem;
+    left: -12rem;
+    top: 30rem;
 }
 
 #about {
@@ -605,7 +608,7 @@ header {
     margin: 0 auto;
     text-align: center;
     min-height: 20rem;
-    height: 22em;
+    padding-bottom: 9rem;
 }
 
 #partnersContainer > h1 {
