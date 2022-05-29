@@ -246,8 +246,13 @@ header {
     border-radius: 12px;
     letter-spacing: .15em;
     padding: 1rem;
+    width: 100%;
     max-width: 27rem;
     color: white;
+}
+
+#ICOTimer {
+    padding-bottom: 1rem;
 }
 
 #ICOTimer div {
@@ -269,7 +274,7 @@ header {
     line-height: 2rem;
 }
 
-#ICOEmail {
+#mce-EMAIL {
     min-width: 12rem;
     width: 60%;
     padding: .5rem;
@@ -282,13 +287,13 @@ header {
     border-radius: 12px 0px 0px 12px;
 }
 
-#ICOEmail::placeholder {
+#mce-EMAIL::placeholder {
     color:white;
     font-family: var(--ff-secondary);
     font-weight: 500;
 }
 
-#ICOEmail:focus {
+#mce-EMAIL:focus {
     outline: none;
 }
 
@@ -297,7 +302,7 @@ header {
     padding-bottom: .7rem;
 }
 
-#ICONotify {
+#mc-embedded-subscribe {
     width: 6rem;
     padding: .5rem;
     background-color: white;
@@ -334,7 +339,7 @@ header {
     max-height: 5rem;
 }
 
-#ICONotify:hover {
+#mc-embedded-subscribe:hover {
     padding-left: .75rem;
 }
 
