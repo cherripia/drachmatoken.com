@@ -107,6 +107,10 @@ nav {
     margin-top: .4em;
 }
 
+#mobileNavToggleClose {
+    visibility: hidden;
+}
+
 @media screen and (max-width: 660px) {
 
     nav {
@@ -167,6 +171,7 @@ nav {
     }
 
     #mobileNavToggleClose {
+        visibility: hidden;
         position: absolute;
         margin: 0 auto;
         padding: 0;
